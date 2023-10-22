@@ -24,6 +24,7 @@ def timer(msg):
 
 
 def main_loop(H, B, q, R_int, gamma, Su, base_, i):
+
     base_folder = os.path.join(os.getcwd(), 'ParametricStudy', f'run_{i}_{base_}')
     os.makedirs(base_folder, exist_ok=True)
 
@@ -62,6 +63,7 @@ if __name__ == '__main__':
         base_file_upper = 'Base_Model_Param_UperFELA.g2x'
         output_csv_file = 'output_results.csv'
 
+        # Model parameters
         H = [18]
         B = [12]
         q = [25]
